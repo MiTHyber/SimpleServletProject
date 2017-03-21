@@ -4,6 +4,10 @@
   <servlet>
   	<servlet-name>xmlServlet</servlet-name>
   	<servlet-class>ru.mithyber.XmlServlet</servlet-class>
+  	<init-param>
+  		<param-name>defaultName</param-name>
+  		<param-value>John Doe</param-value>
+  	</init-param>
   </servlet>
   <servlet-mapping>
   	<servlet-name>xmlServlet</servlet-name>

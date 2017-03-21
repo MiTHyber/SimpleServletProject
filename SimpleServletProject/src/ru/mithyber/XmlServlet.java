@@ -17,6 +17,7 @@ public class XmlServlet extends HttpServlet {
 		PrintWriter writer = resp.getWriter();
 		String userName = req.getParameter("userName");
 		writer.println("Hello from Get, " + userName + "!");
+		writer.println("Xml init param:  " + getServletConfig().getInitParameter("defaultName") + "!");
 	}
 
 	@Override
